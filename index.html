@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio Website </title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/91944c688e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class = container>
+            <nav>
+                <img src="images/logo.png" class = "logo">
+                <ul id = "sidemenu">
+                    <li><a href = "#header"> Home </a></li>
+                    <li><a href = "#about"> Experience </a></li>
+                    <li><a href = "#services"> Services </a></li>
+                    <li><a href = "#portfolio"> Project </a></li>
+                    <li><a href = "#contact"> Contact </a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class = "header-text">
+                <h1>
+                    <br>
+                    I'm Ngoc Ha Vu, an aspiring data scientist from
+                    <a href = "https://www.kenyon.edu/" target = "_blank" rel = "noopenner"> Kenyon College</a>.
+                    Visit my projects on <a href = "https://github.com/havulengoc" target = "_blank" rel = "noopenner">Github</a>.
+                     Reach out to me on <a href = "https://www.linkedin.com/in/ngochavu/" target = "_blank" rel = "noopenner">LinkedIn</a>
+                    or <a href="mailto:vulengocha@gmail.com" target="_blank" rel="noopener">Email</a>!
+                </h1>
+            </div>
+        </div>
+    </div>
+
+<!-- -----------About me---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/aboutme.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm currently an <span class = "current_title">Applied Mathematics and Psychology </span> student with a concentration in Scientific Computing who has always loved the interaction between humans and technology.
+                    I hope to create a better world by <span class = "goal">humanizing technology and building user-centered products </span> through well-conducted research and analysis of real-world data.
+                    <br><br>
+                    I have a huge passion for <span class = "passion">Data Science and Machine Learning</span>. In my free time, I enjoy learning new languages and frameworks for side projects.
+                    <br><br>
+                    In summer 2023, I'm hoping to work as, but not limited to, a data analyst or data scientist. With my software development skills, I'm also looking forward to opportunities in technology industry.
+                </p>
+
+                <div class="tab-titles">
+                  <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Analyst</span><br>Tell stories through data</li>
+                        <li><span>Data Scientist</span><br>Build models to predict the world</li>
+                        <li><span>Web - App Developer</span><br>Build Web & Android/IOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Jan 2023 - Present</span><br>Institutional Research Student Analyst at Office Institutional Research, Kenyon College</li>
+                        <li><span>Aug 2022 - Present</span><br>Career Services Associate at Career Development Office, Kenyon College</li>
+                        <li><span>Aug 2022 - Sept 2022</span><br>Mentorship Team Associate at Project X Vietnam Tech Community</li>
+                        <li><span>Aug 2020 - June 2021</span><br>Intern at Otus Consulting</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - 2025</span><br>Bachelor of Arts, Kenyon College <br> Major in Applied Mathematics & Psychology <br> Concentrate in Scientific Computing</li>
+                        <li><span>2023a</span><br>Mentee at Google CS Research Mentorship Program</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------Services---------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Design interactive and reposive website using Flask and React.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Data Analytics / Data Science</h2>
+                <p>Tell stories and model the world through data.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Machine Learning</h2>
+                <p>Use data and algorithms to imitate the way that human learns, gradually improve the accuracy.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------Portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png">
+                <div class="layer">
+                    <h3>To-do List Application</h3>
+                    <p>A complete to-do application with all features</p>
+                    <a href="https://github.com/havulengoc/react-todo-app-main"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png">
+                <div class="layer">
+                    <h3>Youtube History Data Analysis</h3>
+                    <p>An analysis of the authors' personal youtube history data.</p>
+                    <a href="https://github.com/havulengoc/youtube_analysis"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png">
+                <div class="layer">
+                    <h3>An introduction to Natural Language Processing Technique</h3>
+                    <p>An analysis of 9 Spiderman movies' reviews from IMDB.</p>
+                    <a href="https://github.com/havulengoc/NLP_spidermanreviews"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href= "https://github.com/havulengoc" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> vulengocha@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/vu.lengocha"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/ngochavu/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/havulengoc"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ngoc Ha Vu 2023</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</body>
+
+</html>
